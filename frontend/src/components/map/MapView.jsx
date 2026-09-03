@@ -62,7 +62,7 @@ export const MapView = ({
   onSelectObject,
   focusBounds
 }) => {
-  const mapCenter = { lat: 31.5204, lng: 74.3587 };
+  const mapCenter = { lat: 37.79, lng: -122.49 }; // San Francisco
   const polygonPositions = coordinates.map(c => [c.lat, c.lng]);
 
   const handleMarkerClick = () => {

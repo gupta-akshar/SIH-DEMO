@@ -6,25 +6,25 @@ class TrackingSimulator {
     this.intervalId = null;
     this.isRunning = false;
     this.route = [
-      { lat: 31.5204, lng: 74.3587 },
-      { lat: 31.5210, lng: 74.3600 },
-      { lat: 31.5212, lng: 74.3610 },
-      { lat: 31.5195, lng: 74.3620 },
-      { lat: 31.5189, lng: 74.3625 },
-      { lat: 31.5185, lng: 74.3600 },
-      { lat: 31.5182, lng: 74.3579 },
-      { lat: 31.5195, lng: 74.3580 }
+      { lat: 37.811, lng: -122.520 }, // Ocean near SF
+      { lat: 37.820, lng: -122.510 },
+      { lat: 37.825, lng: -122.500 },
+      { lat: 37.828, lng: -122.490 },
+      { lat: 37.825, lng: -122.480 },
+      { lat: 37.818, lng: -122.478 },
+      { lat: 37.810, lng: -122.485 },
+      { lat: 37.805, lng: -122.500 }
     ];
     this.currentRouteIndex = 0;
     this.progress = 0; // 0 to 1 between current and next point
     
     this.state = {
-      id: 'Vehicle-01',
-      name: 'Test Vehicle 01',
+      id: 'Ship-01',
+      name: 'Cargo Vessel Alpha',
       latitude: this.route[0].lat,
       longitude: this.route[0].lng,
       heading: 0,
-      speed: 40,
+      speed: 25, // ships are slower
       status: 'Offline',
       lastUpdated: new Date().toISOString()
     };
@@ -74,7 +74,7 @@ class TrackingSimulator {
       latitude: this.route[0].lat,
       longitude: this.route[0].lng,
       heading: 0,
-      speed: 40,
+      speed: 25,
       status: 'Offline',
       lastUpdated: new Date().toISOString()
     };

@@ -2,7 +2,12 @@ import { useState, useCallback } from 'react';
 import { validateCoordinate } from '../utils/geoUtils';
 
 export const useCoordinateSelection = () => {
-  const [coordinates, setCoordinates] = useState([]);
+  const [coordinates, setCoordinates] = useState([
+    { id: 1, lat: 37.771, lng: -122.508 }, // Golden Gate Park West
+    { id: 2, lat: 37.776, lng: -122.463 }, // Golden Gate Park North East
+    { id: 3, lat: 37.768, lng: -122.463 }, // Golden Gate Park South East
+    { id: 4, lat: 37.764, lng: -122.508 }  // Golden Gate Park South West
+  ]);
   const [isSelectionMode, setIsSelectionMode] = useState(false);
   const [history, setHistory] = useState([]); // for undo
 
