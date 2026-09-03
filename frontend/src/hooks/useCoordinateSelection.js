@@ -3,10 +3,10 @@ import { validateCoordinate } from '../utils/geoUtils';
 
 export const useCoordinateSelection = () => {
   const [coordinates, setCoordinates] = useState([
-    { id: 1, lat: 37.771, lng: -122.508 }, // Golden Gate Park West
-    { id: 2, lat: 37.776, lng: -122.463 }, // Golden Gate Park North East
-    { id: 3, lat: 37.768, lng: -122.463 }, // Golden Gate Park South East
-    { id: 4, lat: 37.764, lng: -122.508 }  // Golden Gate Park South West
+    { id: 1, lat: 18.940, lng: 72.815 }, // Mumbai Coast North-West
+    { id: 2, lat: 18.940, lng: 72.825 }, // Mumbai Inland North-East
+    { id: 3, lat: 18.930, lng: 72.825 }, // Mumbai Inland South-East
+    { id: 4, lat: 18.930, lng: 72.815 }  // Mumbai Coast South-West
   ]);
   const [isSelectionMode, setIsSelectionMode] = useState(false);
   const [history, setHistory] = useState([]); // for undo

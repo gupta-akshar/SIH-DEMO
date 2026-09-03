@@ -6,14 +6,14 @@ class TrackingSimulator {
     this.intervalId = null;
     this.isRunning = false;
     this.route = [
-      { lat: 37.811, lng: -122.520 }, // Ocean near SF
-      { lat: 37.820, lng: -122.510 },
-      { lat: 37.825, lng: -122.500 },
-      { lat: 37.828, lng: -122.490 },
-      { lat: 37.825, lng: -122.480 },
-      { lat: 37.818, lng: -122.478 },
-      { lat: 37.810, lng: -122.485 },
-      { lat: 37.805, lng: -122.500 }
+      { lat: 18.940, lng: 72.805 }, // Arabian Sea near Mumbai
+      { lat: 18.935, lng: 72.800 },
+      { lat: 18.930, lng: 72.795 },
+      { lat: 18.925, lng: 72.795 },
+      { lat: 18.920, lng: 72.790 },
+      { lat: 18.915, lng: 72.795 },
+      { lat: 18.910, lng: 72.800 },
+      { lat: 18.905, lng: 72.805 }
     ];
     this.currentRouteIndex = 0;
     this.progress = 0; // 0 to 1 between current and next point
